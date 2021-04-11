@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AmpPi</title>
+</head>
+<body>
+<form method="post">
+    <!-- <input type="number" name="num" value="{{ num }}"/> -->
+    <select name="effect" style="width:150px;">
+        {% for key, value in effects.items() %}
+            <option value={{key}} {% if active == key %} selected {% endif %} > {{ effects[key] }} </option>
+        {% endfor %}
+    </select>
+    <input type="submit">
+</form>
+<p>Result: {{ active }}</p>
+</body>
+</html>
