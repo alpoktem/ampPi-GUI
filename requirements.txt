@@ -2,3 +2,6 @@ fastapi==0.63.0
 uvicorn==0.13.3
 httpx==0.16.1
 python-multipart==0.0.5
+gunicorn==20.1.0
+uvloop==0.15.2
+httptools==0.1.1

@@ -7,13 +7,14 @@
 <body>
 <form method="post">
     <!-- <input type="number" name="num" value="{{ num }}"/> -->
-    <select name="effect" style="width:150px;">
+    <select name="effect" style="width:80%;height:300px;font-size:40px;">
         {% for key, value in effects.items() %}
             <option value={{key}} {% if active == key %} selected {% endif %} > {{ effects[key] }} </option>
         {% endfor %}
     </select>
-    <input type="submit">
+	<br>
+    <input type="submit" style="font-size:40px;width:80%;height:300px;">
 </form>
-<p>Result: {{ active }}</p>
+<p>Preset: {{ active }}</p>
 </body>
 </html>
