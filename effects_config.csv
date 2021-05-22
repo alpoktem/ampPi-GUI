@@ -1,0 +1,33 @@
+id	load	name	function1	function2	function3
+1	#	Clean
+31	#	DistP3
+32	#	myFuzz
+24	#	Simple fuzz
+21	#	Reverb	Room	Damp	Wet
+17	#	Chorus	Fdbk	Depth	Speed
+3	#	Warble Chorus	Feedback	Depth	Speed
+4	#	Tremolo	Speed	Shape	Depth
+5	#	Vibrato	Depth	Speed
+8	#	Low Fuzz Wah	MaxF	MinF	Speed
+9	#	Med Fuzz Wah	MaxF	MinF	Speed
+15	#	Digital Delay	DlyTime	Repeats
+20	#	Phaser	Speed	Depth	Feedback
+25	#	Step-vibrato	Depth	Speed	Output
+26	#	Transmitter
+27	#	The Hexxciter
+2		Chorus	Fdbk	Depth	Speed
+6		Wah	MaxF	MinF	Speed
+7		Ring Modulator	Pitch
+10		Hi Fuzz Wah	MaxF	MinF	Speed
+11		Ring Mod Fuzz	Pitch	Boost
+12		Fuzz	Boost	Tone
+13		Subtractive OD	Gain	Tone
+14		Tube Screamer	Gain
+16		Bold as love	
+18		Down the stairs
+19		Looper
+22		Ring modulator	
+23		Simple delay
+28		Tremolo
+29		Vibrato
+30		WhaAuto

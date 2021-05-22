@@ -3,18 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>AmpPi</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 </head>
 <body>
 <form method="post">
     <!-- <input type="number" name="num" value="{{ num }}"/> -->
-    <select name="effect" style="width:80%;height:300px;font-size:40px;">
+    <select id="effectbox" name="effect" style="width:80%;height:300px;font-size:40px;">
         {% for key, value in effects.items() %}
             <option value={{key}} {% if active == key %} selected {% endif %} > {{ effects[key] }} </option>
         {% endfor %}
     </select>
 	<br>
-    <input type="submit" style="font-size:40px;width:80%;height:300px;">
+    <!-- <input type="submit" style="font-size:40px;width:80%;height:300px;"> -->
 </form>
 <p>Preset: {{ active }}</p>
+
+<script>
+  $('#effectbox').on('change', function(){
+    console.log($('#effectbox').val());
+    $(this).closest('form').submit();
+});
+</script>
+
 </body>
 </html>
